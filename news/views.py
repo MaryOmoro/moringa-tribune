@@ -34,3 +34,15 @@ def news_of_day(request):
             '''
     return HttpResponse(html)
 
+    def past_days_news(request):
+        date = dt.datetime.strptime(past_date, '%y-%m-%d').date()
+        day = convert_dates(date)
+        html = f'''
+        <html>
+        <body>
+        <h1>News for {day} {date.day}.{date.month}.{date.year}</h1>
+        </body>
+        </html>
+        '''
+        return HttpResponse(html)
+
