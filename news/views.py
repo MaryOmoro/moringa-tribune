@@ -5,7 +5,7 @@ def welcome(request):
     return HttpRespose('Welcome to Moringa Tribune')
 
     import datetime as dt
-    def news-of-the-day(request):
+    def news_of_the_day(request):
         date = dt.date.today()
 html = f'''
 <html>
