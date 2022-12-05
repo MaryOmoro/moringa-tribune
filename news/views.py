@@ -55,5 +55,9 @@ def news_of_the_day(request):
         except ValueError:
             raise Http404()
 
+from django.shortcuts import render
+    def welcome(request):
+        return render(request, 'welcome.html')
+
 
 
