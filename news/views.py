@@ -35,7 +35,7 @@ def news_of_the_day(request):
         </html>
             '''
     return HttpResponse(html)
-    import datetime as dt
+
     def past_days_news(request,past_date):
         date = dt.datetime.strptime(past_date, '%y-%m-%d').date()
         day = convert_dates(date)
